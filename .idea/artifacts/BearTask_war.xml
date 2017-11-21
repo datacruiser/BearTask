@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BearTask:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="BearTask.war">
+      <element id="artifact" artifact-name="BearTask:war exploded" />
+    </root>
+  </artifact>
+</component>
