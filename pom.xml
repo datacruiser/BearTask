@@ -9,14 +9,14 @@
   <url>https://github.com/datacruiser/BearTask</url>
   <dependencies>
 
-    <dependency>
-      <!-- 单元测试 -->
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-        <!-- 表示开发的时候引入，发布的时候不会加载此包 -->
-        <scope>test</scope>
-    </dependency>
+      <dependency>
+          <!-- 单元测试 -->
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.12</version>
+          <!-- 表示开发的时候引入，发布的时候不会加载此包 -->
+          <scope>test</scope>
+      </dependency>
 
       <!-- 1.日志 -->
       <!--<!– 实现slf4j接口并整合 –>-->
@@ -65,11 +65,11 @@
 
 
 
-    <!-- <dependency>
-      <groupId>c3p0</groupId>
-      <artifactId>c3p0</artifactId>
-      <version>0.9.1.2</version>
-    </dependency> -->
+      <!-- <dependency>
+        <groupId>c3p0</groupId>
+        <artifactId>c3p0</artifactId>
+        <version>0.9.1.2</version>
+      </dependency> -->
 
       <!--2 DAO: MyBatis -->
       <dependency>
@@ -182,11 +182,11 @@
           <version>3.2.1</version>
       </dependency>
 
-    <dependency>
-      <groupId>javax</groupId>
-      <artifactId>javaee-api</artifactId>
-      <version>7.0</version>
-    </dependency>
+      <dependency>
+          <groupId>javax</groupId>
+          <artifactId>javaee-api</artifactId>
+          <version>7.0</version>
+      </dependency>
       <!-- 导入dbcp的jar包，用来在applicationContext.xml中配置数据库 -->
       <dependency>
           <groupId>commons-dbcp</groupId>
@@ -260,6 +260,19 @@
           <version>1.9</version>
       </dependency>
 
+      <!-- velocity engine -->
+      <dependency>
+          <groupId>org.apache.velocity</groupId>
+          <artifactId>velocity-engine-core</artifactId>
+          <version>2.0</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.velocity</groupId>
+          <artifactId>velocity-tools</artifactId>
+          <version>2.0</version>
+      </dependency>
+
   </dependencies>
 
     <!-- 配置可变版本号,也就是常说的版本管理 （Spring、SpringMvc、Mybatis、Gson、Druid） -->
@@ -280,7 +293,7 @@
     </properties>
 
 
-  <build>
+    <build>
     <finalName>BearTask</finalName>
   </build>
 </project>
